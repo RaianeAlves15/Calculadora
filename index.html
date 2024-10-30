@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Soma Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Soma Simples</h1>
+    <input type="number" id="numero1" placeholder="Número 1">
+    <input type="number" id="numero2" placeholder="Número 2">
+    <button onclick="calcularSoma()">Calcular</button>
+
+    <script>
+        function calcularSoma() {
+            // Obter os valores dos campos de entrada
+            const num1 = parseFloat(document.getElementById('numero1').value);
+            const num2 = parseFloat(document.getElementById('numero2').value);
+            
+            // Calcular a soma
+            const soma = num1 + num2;
+
+            // Exibir o resultado em um alerta
+            alert('A soma é: ' + soma);
+        }
+    </script>
+
+</body>
+</html>
